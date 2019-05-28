@@ -1,0 +1,154 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.harry.testActiviti</groupId>
+  <artifactId>activitiDemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+   <spring.version>4.1.5.RELEASE</spring.version>
+   <activiti.version>5.21.0</activiti.version>
+   <junit-version>4.12</junit-version>
+   <log4j2-version>2.11.0</log4j2-version>
+   <asp-version>1.8.0</asp-version>
+   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit-version}</version>
+        <scope>test</scope>
+      </dependency>
+      
+	  <dependency>
+	    <groupId>org.activiti</groupId>
+	    <artifactId>activiti-engine</artifactId>
+	    <version>${activiti.version}</version>
+	 </dependency>
+	 
+	 <dependency>
+	    <groupId>org.activiti</groupId>
+	    <artifactId>activiti-spring</artifactId>
+	    <version>${activiti.version}</version>
+	</dependency>
+  
+     <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context-support</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-orm</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-test</artifactId>
+	    <version>${spring.version}</version>
+	    <scope>test</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-web</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-oxm</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-websocket</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-messaging</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+        <groupId>javax.websocket</groupId>
+        <artifactId>javax.websocket-api</artifactId>
+        <version>1.1</version>
+        <scope>provided</scope>
+    </dependency>
+	<!-- 日志相关包 -->
+     <dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-core</artifactId>
+	    <version>${log4j2-version}</version>
+	 </dependency>
+     <dependency>
+       <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-api</artifactId>
+	    <version>${log4j2-version}</version>
+	 </dependency>
+	 <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-web</artifactId>
+	    <version>${log4j2-version}</version>
+	 </dependency>
+	<dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-api</artifactId>
+         <version>1.7.21</version>
+     </dependency>
+     <dependency> <!-- 桥接：告诉Slf4j使用Log4j2 -->
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-slf4j-impl</artifactId>
+        <version>${log4j2-version}</version>
+    </dependency>
+    
+    <!-- AOP相关包 -->
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>${asp-version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>${asp-version}</version>
+    </dependency>
+	
+	<!-- MySQL相关包 -->
+     <dependency>
+         <groupId>mysql</groupId>
+         <artifactId>mysql-connector-java</artifactId>
+         <version>5.1.26</version>
+     </dependency>
+     
+     <!-- 数据库连接池 -->
+     <dependency>
+         <groupId>com.alibaba</groupId>
+         <artifactId>druid</artifactId>
+         <version>1.0.20</version>
+     </dependency>	
+  </dependencies>
+</project>
